@@ -101,10 +101,9 @@ img {
   display: block;
 }
 
-#identity .logo img {
-  height: 50px;
+#identity .logo .logo-svg {
+  height: 44px;
   width: auto;
-  filter: brightness(0) invert(1);
 }
 
 /* Hamburger Menu Toggle */
@@ -349,8 +348,8 @@ img {
     padding: 16px 20px;
   }
 
-  #identity .logo img {
-    height: 36px;
+  #identity .logo .logo-svg {
+    height: 30px;
   }
 
   .project-panel {
