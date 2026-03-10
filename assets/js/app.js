@@ -81,3 +81,38 @@
   });
 
 })();
+
+// Video modal functions (global scope for onclick handlers)
+function openVideo(id, title) {
+  var modal = document.getElementById('video-modal');
+  var player = document.getElementById('video-player');
+  var titleEl = document.getElementById('video-title');
+
+  player.innerHTML = '<iframe src="https://player.vimeo.com/video/' + id + '?autoplay=1&color=2585E8&title=0&byline=0&portrait=0" allowfullscreen allow="autoplay; fullscreen"></iframe>';
+  titleEl.textContent = title;
+  modal.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideo(e) {
+  if (e) e.stopPropagation();
+  var modal = document.getElementById('video-modal');
+  var player = document.getElementById('video-player');
+
+  modal.classList.remove('is-open');
+  document.body.style.overflow = '';
+  // Remove iframe to stop playback
+  setTimeout(function () {
+    player.innerHTML = '';
+  }, 300);
+}
+
+// Close video modal on Escape key
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    var modal = document.getElementById('video-modal');
+    if (modal && modal.classList.contains('is-open')) {
+      closeVideo();
+    }
+  }
+});
