@@ -148,6 +148,7 @@
       partner: 'Fascinate Media',
       description: 'An animated series that explains educational concepts like environmental justice and food deserts.',
       category: 'Series',
+      externalUrl: 'https://www.youtube.com/watch?v=64Yq9qAc9po',
       gifUrl: 'productions/public/gifs/HOOD SCIENCE.gif'
     },
     {
@@ -164,7 +165,7 @@
       partner: 'STEMedia',
       description: 'Justin co-produced an educational summit with STEMedia for thousands of STEM professionals featuring popular STEM leaders and figures across the globe.',
       category: 'Live Events',
-      externalUrl: 'https://www.stemedia.com/experience/stem-success-summit',
+      externalUrl: 'https://youtu.be/fpv-xcvY7EQ?si=1FImhZ2CTj_aPIir',
       gifUrl: 'productions/public/gifs/stem success trailer.gif'
     },
     {
