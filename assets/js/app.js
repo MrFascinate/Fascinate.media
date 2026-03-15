@@ -172,24 +172,6 @@
       gifUrl: 'productions/public/gifs/USA Science Fest.gif'
     },
     {
-      id: 'ai-cool-things',
-      title: '3 Cool Things You Can Do with AI Today',
-      partner: 'Fascinate Media',
-      description: 'Justin shares three practical and exciting things you can do with AI right now.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1075550647',
-      thumbnailUrl: 'https://vumbnail.com/1075550647.jpg'
-    },
-    {
-      id: 'ai-assistants',
-      title: 'AI Assistants and How They Can Help',
-      partner: 'Fascinate Media',
-      description: 'A breakdown of how AI assistants work and the ways they can boost your productivity.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1097189159',
-      thumbnailUrl: 'https://vumbnail.com/1097189159.jpg'
-    },
-    {
       id: 'ai-agents',
       title: 'What Are AI Agents?',
       partner: 'Fascinate Media',
@@ -208,24 +190,6 @@
       thumbnailUrl: 'https://vumbnail.com/1154892061.jpg'
     },
     {
-      id: 'ai-social-clips',
-      title: 'AI Can Edit Your Social Media Clips',
-      partner: 'Fascinate Media',
-      description: 'How AI tools can automatically edit and optimize your social media video content.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1154892200',
-      thumbnailUrl: 'https://vumbnail.com/1154892200.jpg'
-    },
-    {
-      id: 'ai-agents-replacing',
-      title: 'AI Agents Replacing Assistants',
-      partner: 'Fascinate Media',
-      description: 'Exploring how AI agents are evolving beyond simple assistants into autonomous workers.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1154892514',
-      thumbnailUrl: 'https://vumbnail.com/1154892514.jpg'
-    },
-    {
       id: 'ai-jobs-future',
       title: 'AI Enabled Jobs of the Future',
       partner: 'Fascinate Media',
@@ -234,42 +198,6 @@
       videoUrl: 'https://player.vimeo.com/video/1154892579',
       thumbnailUrl: 'https://vumbnail.com/1154892579.jpg'
     },
-    {
-      id: 'ai-context-eng',
-      title: 'What Is Context Engineering?',
-      partner: 'Fascinate Media',
-      description: 'Justin breaks down the emerging discipline of context engineering for AI systems.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1154892831',
-      thumbnailUrl: 'https://vumbnail.com/1154892831.jpg'
-    },
-    {
-      id: 'ai-background',
-      title: 'Replacing Any Background with AI',
-      partner: 'Fascinate Media',
-      description: 'How to use AI to seamlessly replace backgrounds in photos and videos.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1154892954',
-      thumbnailUrl: 'https://vumbnail.com/1154892954.jpg'
-    },
-    {
-      id: 'ai-face-upload',
-      title: 'Watch This Before Uploading Your Face with AI Tools',
-      partner: 'Fascinate Media',
-      description: 'Important privacy and safety considerations before using AI face tools.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1154893086',
-      thumbnailUrl: 'https://vumbnail.com/1154893086.jpg'
-    },
-    {
-      id: 'ai-prompt-importance',
-      title: "How Does AI Know What's Most Important in Your Prompt?",
-      partner: 'Fascinate Media',
-      description: 'Understanding how AI models parse and prioritize different parts of your prompts.',
-      category: 'Education',
-      videoUrl: 'https://player.vimeo.com/video/1154893202',
-      thumbnailUrl: 'https://vumbnail.com/1154893202.jpg'
-    }
   ];
 
   var categories = ['All', 'Series', 'Education', 'Branded Content', 'Broadcast', 'Live Events'];
@@ -294,7 +222,11 @@
       var imgSrc = p.gifUrl || p.thumbnailUrl || '';
       var mediaHTML;
       if (imgSrc) {
-        mediaHTML = '<img src="' + imgSrc + '" alt="' + escapeHTML(p.title) + '" loading="lazy">';
+        var imgStyle = '';
+        if (p.id === 'ai-headshots' || p.id === 'ai-agents') {
+          imgStyle = ' style="object-position: center 20%"';
+        }
+        mediaHTML = '<img src="' + imgSrc + '" alt="' + escapeHTML(p.title) + '" loading="lazy"' + imgStyle + '>';
       } else {
         mediaHTML = '<div class="card-placeholder"><span>' + escapeHTML(p.title) + '</span></div>';
       }
