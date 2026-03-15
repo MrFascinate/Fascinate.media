@@ -21,6 +21,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -352,6 +353,7 @@ img {
   position: relative;
   padding: 96px 0;
   background: var(--dark);
+  overflow: hidden;
 }
 
 .productions-section .bg-glow {
