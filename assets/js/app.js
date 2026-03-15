@@ -14,7 +14,7 @@
       description: 'An educational science podcast where co-hosts Dr. Dakotah Tyler and Justin Shaifer talk space, science, the future, and culture.',
       category: 'Series',
       externalUrl: 'https://curiositytheorypod.com',
-      gifUrl: 'gifs/curiosity theory.gif'
+      gifUrl: 'productions/public/gifs/curiosity theory.gif'
     },
     {
       id: 'chevy-ev',
@@ -23,7 +23,7 @@
       description: 'Justin hosts a car commercial for Chevy\'s EV, describing "What\'s Cool About Electric" and how sustainable energy sources can empower communities of color.',
       category: 'Branded Content',
       videoUrl: 'https://player.vimeo.com/video/787496100',
-      gifUrl: 'gifs/CHEVY DTU.gif'
+      gifUrl: 'productions/public/gifs/CHEVY DTU.gif'
     },
     {
       id: 'why-am-i-like-this',
@@ -31,7 +31,7 @@
       partner: 'PBS Digital Studios',
       description: 'Justin executive produced an 8 episode series about biology and anthropology starring Dr. Tina Lasisi. His cameo appearances can be found on YouTube!',
       category: 'Series',
-      gifUrl: 'gifs/WHYA.gif'
+      gifUrl: 'productions/public/gifs/WHYA.gif'
     },
     {
       id: 'ai-agents-everyday',
@@ -40,7 +40,7 @@
       description: 'In this course, Justin Shaifer introduces beginner-friendly AI agent platform n8n, explores practical use cases for automating everyday work, and shares key ethical considerations for responsible AI agent use.',
       category: 'Education',
       externalUrl: 'https://www.linkedin.com/learning/ai-agents-for-everyday-professionals-simple-automations-to-speed-up-your-work-no-code-required/when-to-use-and-not-use-an-ai-agent',
-      gifUrl: 'gifs/linkedin learning n8n.gif'
+      gifUrl: 'productions/public/gifs/linkedin learning n8n.gif'
     },
     {
       id: 'intuit-ideas',
@@ -48,7 +48,7 @@
       partner: 'Intuit',
       description: 'A branded content series capturing the progress of business owners as they use Intuit\'s financial technology products such as TurboTax, Mailchimp, and more.',
       category: 'Branded Content',
-      gifUrl: 'gifs/Intuit Teaser.gif'
+      gifUrl: 'productions/public/gifs/Intuit Teaser.gif'
     },
     {
       id: 'attn-mgm',
@@ -57,7 +57,7 @@
       description: 'Justin partners with ATTN and travels across MGM resorts in Las Vegas, discussing how each experience heightens and reduces specific neurotransmitters.',
       category: 'Branded Content',
       videoUrl: 'https://player.vimeo.com/video/787494350',
-      gifUrl: 'gifs/mgm-attn.gif'
+      gifUrl: 'productions/public/gifs/mgm-attn.gif'
     },
     {
       id: 'second-home',
@@ -66,7 +66,7 @@
       description: 'Justin breaks down how he used a virtual production workflow to create A Second Home, an immersive educational series hosted by an astrophysicist imagining life on exoplanets.',
       category: 'Series',
       videoUrl: 'https://player.vimeo.com/video/787498544',
-      gifUrl: 'gifs/ASecondHome2.gif'
+      gifUrl: 'productions/public/gifs/ASecondHome2.gif'
     },
     {
       id: 'day-on-mars',
@@ -74,7 +74,7 @@
       partner: 'Fascinate Media',
       description: 'Day On Mars is a 3D-Animated short-form series produced in Unreal Engine that showcases how future residents might spend their day on Mars.',
       category: 'Series',
-      gifUrl: 'gifs/DayOnMars4k_7_6_24_1(2).gif'
+      gifUrl: 'productions/public/gifs/DayOnMars4k_7_6_24_1(2).gif'
     },
     {
       id: 'metaverse',
@@ -83,7 +83,7 @@
       description: 'A proof of concept for a series produced by Al Roker Entertainment about the Metaverse and its implications, hosted and co-produced by Justin "Mr. Fascinate" Shaifer.',
       category: 'Series',
       videoUrl: 'https://player.vimeo.com/video/787497906',
-      gifUrl: 'gifs/metaverse.gif'
+      gifUrl: 'productions/public/gifs/metaverse.gif'
     },
     {
       id: 'wedu-pbs',
@@ -92,7 +92,7 @@
       description: 'Justin works with WEDU PBS in Tampa, FL to discuss innovations for local climate impact reduction. This was filmed immediately before Hurricane Ian made landfall nearby.',
       category: 'Broadcast',
       videoUrl: 'https://player.vimeo.com/video/787495541',
-      gifUrl: 'gifs/WEDU.gif'
+      gifUrl: 'productions/public/gifs/WEDU.gif'
     },
     {
       id: 'purecycle',
@@ -101,7 +101,7 @@
       description: 'Justin works with MythBusters star Kari Byron and Jenny Buccos to host a show about the past, present, and future of plastics.',
       category: 'Series',
       videoUrl: 'https://player.vimeo.com/video/787496645',
-      gifUrl: 'gifs/purecycle.gif'
+      gifUrl: 'productions/public/gifs/purecycle.gif'
     },
     {
       id: 'al-roker-space',
@@ -110,7 +110,7 @@
       description: 'Justin works with Al Roker Entertainment to host an episode of a dynamic show where he explores the possibility of human-led expeditions to the moon and Mars.',
       category: 'Series',
       videoUrl: 'https://player.vimeo.com/video/787497321',
-      gifUrl: 'gifs/Forging the Future.gif'
+      gifUrl: 'productions/public/gifs/Forging the Future.gif'
     },
     {
       id: 'linkedin-learning',
@@ -119,7 +119,7 @@
       description: 'Justin works with LinkedIn Learning to engage in a dynamic conversation with an AI about the Future of Work.',
       category: 'Branded Content',
       videoUrl: 'https://player.vimeo.com/video/787493637',
-      gifUrl: 'gifs/LinkedIn Learning.gif'
+      gifUrl: 'productions/public/gifs/LinkedIn Learning.gif'
     },
     {
       id: 'soul-of-a-nation',
@@ -127,7 +127,7 @@
       partner: 'ABC News',
       description: 'Justin weighs in on the importance of STEM with ABC News on Prime Time TV in their 6-part series Soul of a Nation. Justin\'s feature in episode 2 is now available on Hulu.',
       category: 'Broadcast',
-      gifUrl: 'gifs/abc.gif'
+      gifUrl: 'productions/public/gifs/abc.gif'
     },
     {
       id: 'ai-agents-browser',
@@ -136,7 +136,7 @@
       description: 'This course unpacks the capabilities of Agentic Browsers, and shows users how to speed up their work using Gemini in Chrome.',
       category: 'Education',
       externalUrl: 'https://www.linkedin.com/learning/ai-agents-in-your-browser-boosting-productivity-with-gemini-in-chrome/what-is-an-agentic-browser-and-why-should-you-care?autoSkip=true&resume=false',
-      gifUrl: 'gifs/linkedin learning gemini.gif'
+      gifUrl: 'productions/public/gifs/linkedin learning gemini.gif'
     },
     {
       id: 'hood-science',
@@ -144,7 +144,7 @@
       partner: 'Fascinate Media',
       description: 'An animated series that explains educational concepts like environmental justice and food deserts.',
       category: 'Series',
-      gifUrl: 'gifs/HOOD SCIENCE.gif'
+      gifUrl: 'productions/public/gifs/HOOD SCIENCE.gif'
     },
     {
       id: 'nsf-icorps',
@@ -152,7 +152,7 @@
       partner: 'NSF / USC',
       description: 'A series of educational explainer videos describing the impact of NSF\'s iCorps program at USC.',
       category: 'Education',
-      gifUrl: 'gifs/NSF+ICorps.gif'
+      gifUrl: 'productions/public/gifs/NSF+ICorps.gif'
     },
     {
       id: 'stem-success-summit',
@@ -161,7 +161,7 @@
       description: 'Justin co-produced an educational summit with STEMedia for thousands of STEM professionals featuring popular STEM leaders and figures across the globe.',
       category: 'Live Events',
       externalUrl: 'https://www.stemedia.com/experience/stem-success-summit',
-      gifUrl: 'gifs/stem success trailer.gif'
+      gifUrl: 'productions/public/gifs/stem success trailer.gif'
     },
     {
       id: 'usa-science-fest',
@@ -169,7 +169,7 @@
       partner: 'USA Science & Engineering Festival',
       description: 'Justin served as official host and MC for 5 large-scale USA Science Fest Events, engaging thousands of attendees with interactive STEM demonstrations.',
       category: 'Live Events',
-      gifUrl: 'gifs/USA Science Fest.gif'
+      gifUrl: 'productions/public/gifs/USA Science Fest.gif'
     },
     {
       id: 'ai-cool-things',
