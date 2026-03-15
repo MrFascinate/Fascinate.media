@@ -947,7 +947,7 @@ img {
   }
 
   .card-play {
-    opacity: 1;
+    display: none;
   }
 
   .footer-grid {
