@@ -4,415 +4,205 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Fascinate — Productions</title>
+  <title>Productions — Justin "Mr. Fascinate" Shaifer</title>
 
   <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/8e279464-1185-4ab0-9e74-7421beccf699/favicon.ico?format=100w">
 
-  <meta name="description" content="Mr. Fascinate tells compelling stories using innovative media technology. Educational content, branded series, 3D & VFX.">
+  <meta name="description" content="Award-winning media exploring AI, space, neuroscience, and the future — produced and hosted by Justin Shaifer.">
   <meta name="author" content="Mr. Fascinate">
   <meta property="og:site_name" content="Mr. Fascinate">
-  <meta property="og:title" content="Mr. Fascinate — Productions">
-  <meta property="og:description" content="We tell compelling stories using innovative media technology.">
+  <meta property="og:title" content="Productions — Justin 'Mr. Fascinate' Shaifer">
+  <meta property="og:description" content="Award-winning educational content about Space, Biology, AI and the future.">
   <meta property="og:url" content="https://www.fascinate.media">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://www.fascinate.media">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="home">
+<body>
 
-  <div id="loader-screen">
-    <div class="load-panel"></div>
-  </div>
-
-  <div class="page">
-    <header id="mast" class="header">
-      <div id="menu-toggle"><span></span><span></span></div>
-      <div id="nav-panel">
-        <div class="inner">
-          <nav class="primary-nav" role="navigation">
-            <ul class="menu">
-              <li class="menu-item is-active"><a href="/">Home</a></li>
-              <li class="menu-item"><a href="/team">Team</a></li>
-              <li class="menu-item"><a href="/productions">Productions</a></li>
-              <li class="menu-item"><a href="/contact">Contact</a></li>
-            </ul>
-          </nav>
+  <!-- ─── Navbar ─── -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-pill glass">
+        <a href="#" class="navbar-logo">
+          <img src="mr_fascinate_logo_transparent_blue.png" alt="Mr. Fascinate">
+        </a>
+        <div class="navbar-links">
+          <a href="#productions">Productions</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.justinshaifer.com" target="_blank" rel="noopener noreferrer" class="btn-outline">Main Site</a>
         </div>
-      </div>
-      <div id="identity">
-        <a class="logo" href="/" aria-label="Mr. Fascinate — Home">
-          <svg class="logo-svg" viewBox="0 0 520 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mr. Fascinate">
-            <text x="0" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-style="italic" fill="#3399FF" letter-spacing="-1">Mr.</text>
-            <rect x="120" y="8" width="56" height="64" rx="3" fill="#3399FF"/>
-            <text x="148" y="55" font-family="'Inter', Arial, sans-serif" font-size="38" font-weight="700" fill="#000" text-anchor="middle">F</text>
-            <text x="168" y="24" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="500" fill="#000" text-anchor="end">9</text>
-            <rect x="180" y="8" width="56" height="64" rx="3" fill="#3399FF"/>
-            <text x="208" y="55" font-family="'Inter', Arial, sans-serif" font-size="38" font-weight="700" fill="#000" text-anchor="middle">As</text>
-            <text x="228" y="24" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="500" fill="#000" text-anchor="end">33</text>
-            <rect x="240" y="8" width="56" height="64" rx="3" fill="#3399FF"/>
-            <text x="268" y="55" font-family="'Inter', Arial, sans-serif" font-size="38" font-weight="700" fill="#000" text-anchor="middle">C</text>
-            <text x="288" y="24" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="500" fill="#000" text-anchor="end">6</text>
-            <rect x="300" y="8" width="56" height="64" rx="3" fill="#3399FF"/>
-            <text x="328" y="55" font-family="'Inter', Arial, sans-serif" font-size="38" font-weight="700" fill="#000" text-anchor="middle">I</text>
-            <text x="348" y="24" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="500" fill="#000" text-anchor="end">53</text>
-            <rect x="360" y="8" width="56" height="64" rx="3" fill="#3399FF"/>
-            <text x="388" y="55" font-family="'Inter', Arial, sans-serif" font-size="38" font-weight="700" fill="#000" text-anchor="middle">Na</text>
-            <text x="408" y="24" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="500" fill="#000" text-anchor="end">11</text>
-            <rect x="420" y="8" width="56" height="64" rx="3" fill="#3399FF"/>
-            <text x="448" y="55" font-family="'Inter', Arial, sans-serif" font-size="38" font-weight="700" fill="#000" text-anchor="middle">Te</text>
-            <text x="468" y="24" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="500" fill="#000" text-anchor="end">52</text>
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
-        </a>
+        </button>
       </div>
-    </header>
-
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" style="background-image: url('https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/7910730f-7e2f-471b-bb0d-1d693c660fdc/Fascinate+Media+Stills+%281%29.png?format=1500w');">
-        <div class="hero-content animate-in">
-          <h1>We tell compelling stories using innovative media technology.</h1>
-          <p class="hero-tags">Educational Content &middot; Branded Series &middot; 3D &amp; VFX</p>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="projects-section">
-        <h2 class="section-heading animate-in">We specialize in:</h2>
-
-        <div class="projects-grid">
-
-          <!-- Day on Mars -->
-          <div class="project-card animate-in">
-            <a href="https://vimeo.com/980852468" target="_blank" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/c05b6ded-f1ef-4649-8468-2ffb059ccfcd/DayOnMars4k_7_6_24.gif?format=750w" alt="Day on Mars" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">Day on Mars</h3>
-                <p class="project-card-desc">A 3D-Animated Short-form series produced in Unreal Engine that showcases how future residents might spend their day on Mars.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- PBS - Why Am I Like This? -->
-          <div class="project-card animate-in">
-            <a href="https://www.youtube.com/watch?v=eWzBNfBnFys&list=PLnNZYWyBGJ1FNZ_ZcL_tJyV8li-lQj0ZA&index=8&ab_channel=PBSTerra" target="_blank" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/af67419d-ad92-4dbd-98a6-1098a685aad7/WHYA.gif?format=750w" alt="PBS - Why Am I Like This?" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">PBS - Why Am I Like This?</h3>
-                <p class="project-card-desc">A biology show executive produced by Fascinate Media and STEMedia for PBS Digital Studios.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- Intuit IDEAS -->
-          <div class="project-card animate-in">
-            <a href="https://vimeo.com/1014979349" target="_blank" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/3a0b2222-3061-4480-aaca-7b963d4e7b7a/Intuit_Teaser_45_231122_Youtube.gif?format=750w" alt="Intuit IDEAS" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">Intuit IDEAS</h3>
-                <p class="project-card-desc">A branded content series capturing the progress of business owners as they use Intuit's financial technology products such as TurboTax, Mailchimp, and more.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- NSF iCorps -->
-          <div class="project-card animate-in">
-            <a href="#" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/0007b90e-d283-4cf3-84ed-bf0af5f010c6/NSF+ICorps.gif?format=750w" alt="NSF iCorps" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">NSF iCorps</h3>
-                <p class="project-card-desc">A series of educational explainer videos describing the impact of NSF's iCorps program at USC.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- LinkedIn Learning -->
-          <div class="project-card animate-in">
-            <a href="https://www.linkedin.com/posts/linkedinlearning_a-conversation-with-the-future-activity-6987815958346104833-2RdH?utm_medium=member_desktop&utm_source=share" target="_blank" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/bdb85754-e53f-4147-b2f7-98cb6a732a3a/LinkedIn+Learning.gif?format=750w" alt="LinkedIn Learning" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">LinkedIn Learning</h3>
-                <p class="project-card-desc">An educational series where Mr. Fascinate partners with LinkedIn to chat with an AI about the Future of Work.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- America on Tech -->
-          <div class="project-card animate-in">
-            <a href="#" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/3b519950-b238-4665-a73f-2c8f8141847c/AOT.gif?format=750w" alt="America on Tech" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">America on Tech</h3>
-                <p class="project-card-desc">America on Tech's CEO, Jessica Santana, speaks about the importance of tech equity and access.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- A Second Home -->
-          <div class="project-card animate-in">
-            <a href="https://vimeo.com/888902646" target="_blank" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/7f1fa350-0aab-4dea-a546-8fa5af8c8a9e/Virtual+Production.gif?format=750w" alt="A Second Home" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">A Second Home</h3>
-                <p class="project-card-desc">Astrophysicist Dakotah Tyler harnesses the power of virtual production to travel throughout the cosmos to visit exoplanets to find a viable candidate for A Second Home for humanity.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- Children's Aid -->
-          <div class="project-card animate-in">
-            <a href="https://www.youtube.com/watch?v=8Hx3ay86jjE&ab_channel=Justin%22Mr.Fascinate%22Shaifer" target="_blank" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/84f07026-9fec-4d73-a001-9d0c60226d92/Children%27s+Aid_2.gif?format=750w" alt="Children's Aid" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">Children's Aid</h3>
-                <p class="project-card-desc">A highlight video of STEM programs performed for high school students at Children's Aid.</p>
-              </div>
-            </a>
-          </div>
-
-          <!-- Hood Science -->
-          <div class="project-card animate-in">
-            <a href="https://www.youtube.com/watch?v=2GHfCw9zcjM&ab_channel=Justin%22Mr.Fascinate%22Shaifer" target="_blank" class="project-card-link">
-              <div class="project-card-media">
-                <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/06eb6bc3-3afc-475e-95f3-0d435252955c/hood+science_1.gif?format=750w" alt="Hood Science" loading="lazy">
-              </div>
-              <div class="project-card-info">
-                <h3 class="project-card-title">Hood Science</h3>
-                <p class="project-card-desc">An animated series that explains educational concepts like environmental justice and food deserts.</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- AI Video Gallery -->
-      <section class="videos-section">
-        <h2 class="section-heading animate-in">AI Video Gallery</h2>
-        <div class="videos-grid">
-
-          <div class="video-card animate-in" onclick="openVideo('1075550647', '3 Cool Things You Can Do with AI Today')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1075550647.jpg" alt="3 Cool Things You Can Do with AI Today" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">3 Cool Things You Can Do with AI Today</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1097189159', 'AI Assistants and How They Can Help')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1097189159.jpg" alt="AI Assistants and How They Can Help" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">AI Assistants and How They Can Help</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1074161713', 'What Are AI Agents?')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1074161713.jpg" alt="What Are AI Agents?" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">What Are AI Agents?</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154892061', 'Are AI Headshots Good Enough Today?')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154892061.jpg" alt="Are AI Headshots Good Enough Today?" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">Are AI Headshots Good Enough Today?</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154892200', 'AI Can Edit Your Social Media Clips')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154892200.jpg" alt="AI Can Edit Your Social Media Clips" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">AI Can Edit Your Social Media Clips</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154892514', 'AI Agents Replacing Assistants')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154892514.jpg" alt="AI Agents Replacing Assistants" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">AI Agents Replacing Assistants</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154892579', 'AI Enabled Jobs of the Future')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154892579.jpg" alt="AI Enabled Jobs of the Future" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">AI Enabled Jobs of the Future</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154892831', 'What Is Context Engineering?')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154892831.jpg" alt="What Is Context Engineering?" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">What Is Context Engineering?</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154892954', 'Replacing Any Background with AI')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154892954.jpg" alt="Replacing Any Background with AI" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">Replacing Any Background with AI</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154893086', 'Watch This Before Uploading Your Face with AI Tools')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154893086.jpg" alt="Watch This Before Uploading Your Face with AI Tools" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">Watch This Before Uploading Your Face with AI Tools</h3>
-            </div>
-          </div>
-
-          <div class="video-card animate-in" onclick="openVideo('1154893202', 'How Does AI Know What&#39;s Most Important in Your Prompt?')">
-            <div class="video-card-media">
-              <img src="https://vumbnail.com/1154893202.jpg" alt="How Does AI Know What's Most Important in Your Prompt?" loading="lazy">
-              <div class="video-play-overlay">
-                <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="23" fill="rgba(0,0,0,0.6)" stroke="#fff" stroke-width="2"/><polygon points="19,14 19,34 35,24" fill="#fff"/></svg>
-              </div>
-            </div>
-            <div class="video-card-info">
-              <h3 class="video-card-title">How Does AI Know What's Most Important in Your Prompt?</h3>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Video Modal -->
-      <div id="video-modal" class="video-modal" onclick="closeVideo(event)">
-        <button class="video-modal-close" onclick="closeVideo(event)" aria-label="Close video">&times;</button>
-        <div class="video-modal-content" onclick="event.stopPropagation()">
-          <div class="video-modal-player" id="video-player"></div>
-          <p class="video-modal-title" id="video-title"></p>
-        </div>
+      <div class="navbar-mobile glass" id="navbar-mobile">
+        <a href="#productions">Productions</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.justinshaifer.com" target="_blank" rel="noopener noreferrer">Main Site</a>
       </div>
+    </div>
+  </nav>
 
-      <!-- Gallery Section -->
-      <section class="gallery-section">
-        <div class="gallery-grid">
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/1506124e-e261-4834-8b96-b284906ae29c/Intro+Video.00_00_04_20.Still002.jpg?format=1000w" alt="Production still" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/e4f54994-cbed-4616-9210-5304d7368bd0/DSC03204+%281%29.jpg?format=1000w" alt="Behind the scenes" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/ef7c091b-2505-4d94-bff7-3d7d36909b58/futurist-152.jpg?format=1000w" alt="Mr. Fascinate portrait" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/fa666b73-d9fc-4aa7-b5db-f3898743f571/blackswan2.jpg?format=1000w" alt="Production still" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/43ef7d64-4056-4d7b-8a9a-a0ae37f623b6/sanfran-12.jpg?format=1000w" alt="On location" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/ea26e8f8-08fb-4df0-bf7c-fbed57d1a1a0/DSC07722+%282%29.JPG?format=1000w" alt="Behind the scenes" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/7f5b59c2-7d40-48bb-96ec-256c0c6b6a8b/Children%27s+Aid.00_00_01_29.Still003.jpg?format=1000w" alt="Children's Aid production" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/b83ce37c-3d14-4805-bc81-361caf2b584a/DSC_9034.jpg?format=1000w" alt="Event photo" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/e4f9b553-25bf-44c5-acbe-bfb3652ab3b2/Children%27s+Aid.00_00_01_07.Still001.jpg?format=1000w" alt="Children's Aid" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/d0c3d0e6-39cc-4b7b-9992-83bc68f89a5e/NSF+ICorps.00_00_01_15.Still002.jpg?format=1000w" alt="NSF iCorps production" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/e2732a4d-fd35-44ba-8a4d-cb695451272f/Sequence+06.00_00_53_09.Still003+%282%29.jpg?format=1000w" alt="Production still" loading="lazy">
-          </figure>
-          <figure class="gallery-item animate-in">
-            <img src="https://images.squarespace-cdn.com/content/v1/63620e90e7dbad2a44003c81/4774870f-8675-41b0-9694-2a655b34420c/image+%282%29.png?format=1000w" alt="3D render" loading="lazy">
-          </figure>
-        </div>
-      </section>
+  <!-- ─── Hero ─── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="gifs/abc.gif" alt="">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo animate-in">
+        <img src="gifs/f8 media.png" alt="F8 Media">
+      </div>
+      <h1 class="hero-title animate-in">PRODUCTIONS</h1>
+      <p class="hero-desc animate-in">
+        Award winning educational content about Space, Biology, AI and the future. Hosted and executive produced by Justin <span class="highlight">"Mr. Fascinate"</span> Shaifer.
+      </p>
+      <div class="hero-buttons animate-in">
+        <button class="btn-primary" id="watch-reel">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+          Watch Reel
+        </button>
+        <a href="#productions" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <a href="#productions" class="hero-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
 
-    </main>
+  <!-- ─── Reel Modal ─── -->
+  <div class="video-modal" id="reel-modal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="reel-modal-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <p class="video-modal-title" style="font-family: Oswald">PRODUCTION REEL</p>
+      <div class="video-modal-player" id="reel-player"></div>
+    </div>
   </div>
 
-  <footer id="sitefooter" role="contentinfo">
-    <div class="inner">
-      <div class="footer-left">
-        <a href="/">&copy; 2026 Mr. Fascinate. All Rights Reserved.</a>
+  <!-- ─── Productions ─── -->
+  <section class="productions-section" id="productions">
+    <div class="bg-glow"></div>
+    <div class="productions-inner">
+      <div class="category-filters" id="category-filters"></div>
+      <div class="productions-grid" id="productions-grid"></div>
+    </div>
+  </section>
+
+  <!-- ─── Video Modal ─── -->
+  <div class="video-modal" id="video-modal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="video-modal-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <p class="video-modal-title" id="video-modal-title"></p>
+      <p class="video-modal-partner" id="video-modal-partner"></p>
+      <div class="video-modal-player" id="video-player"></div>
+    </div>
+  </div>
+
+  <!-- ─── Contact ─── -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="animate-in">
+        <span class="contact-badge glass">Get In Touch</span>
+        <h2 class="contact-heading">INTERESTED IN <span class="text-gradient">COLLABORATING?</span></h2>
+        <p class="contact-desc">Whether it's a branded production, educational series, or a speaking engagement: Our best project is our <em>next</em> project.</p>
       </div>
-      <div class="footer-right">
-        <a href="http://instagram.com/fascinate.media" target="_blank" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/company/fascinate-media-inc/" target="_blank" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
+      <div class="animate-in">
+        <button class="btn-primary" id="contact-btn">Contact</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact Modal ─── -->
+  <div class="contact-modal" id="contact-modal">
+    <div class="contact-modal-box">
+      <button class="contact-modal-close" id="contact-modal-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 class="contact-modal-title">BOOK <span class="text-gradient">NOW</span></h2>
+      <p class="contact-modal-sub">Fill out the form below and we'll get back to you shortly.</p>
+      <form class="contact-form" action="https://formspree.io/f/xlgpwjbj" method="POST">
+        <div>
+          <label>Name <span class="req">*</span></label>
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label>Email <span class="req">*</span></label>
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div>
+          <label>Phone</label>
+          <input type="tel" name="phone" placeholder="(optional)">
+        </div>
+        <div>
+          <label>Subject <span class="req">*</span></label>
+          <input type="text" name="subject" placeholder="What is this regarding?" required>
+        </div>
+        <div>
+          <label>Message <span class="req">*</span></label>
+          <textarea name="message" placeholder="Tell us about your event..." required rows="5"></textarea>
+        </div>
+        <div>
+          <p style="font-size: 0.875rem; font-weight: 600; color: #fff; margin-bottom: 6px;">How did you find me? <span style="font-weight: 400; color: #6b7280;">(optional)</span></p>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="found_via" value="LinkedIn"> LinkedIn</label>
+            <label class="checkbox-label"><input type="checkbox" name="found_via" value="Instagram"> Instagram</label>
+            <label class="checkbox-label"><input type="checkbox" name="found_via" value="YouTube"> YouTube</label>
+            <label class="checkbox-label"><input type="checkbox" name="found_via" value="TikTok"> TikTok</label>
+            <label class="checkbox-label"><input type="checkbox" name="found_via" value="Google"> Google</label>
+            <label class="checkbox-label"><input type="checkbox" name="found_via" value="Referral"> Referral</label>
+            <label class="checkbox-label"><input type="checkbox" name="found_via" value="Other"> Other</label>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary btn-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ─── Footer ─── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="section-divider" style="margin-bottom: 48px;"></div>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="mr_fascinate_logo_transparent_blue.png" alt="Mr. Fascinate">
+          </div>
+          <p class="footer-tagline">Award-winning STEM media producer and on-camera talent.</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#productions">Productions</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.justinshaifer.com" target="_blank" rel="noopener noreferrer">
+            Main Website
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jshaifer/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fascinate Media. All rights reserved.</p>
       </div>
     </div>
   </footer>
