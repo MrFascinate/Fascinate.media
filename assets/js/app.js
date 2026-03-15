@@ -31,6 +31,7 @@
       partner: 'PBS Digital Studios',
       description: 'Justin executive produced an 8 episode series about biology and anthropology starring Dr. Tina Lasisi. His cameo appearances can be found on YouTube!',
       category: 'Series',
+      externalUrl: 'https://youtu.be/eWzBNfBnFys?si=cDz48aao-nFG-f2d',
       gifUrl: 'productions/public/gifs/WHYA.gif'
     },
     {
@@ -48,6 +49,7 @@
       partner: 'Intuit',
       description: 'A branded content series capturing the progress of business owners as they use Intuit\'s financial technology products such as TurboTax, Mailchimp, and more.',
       category: 'Branded Content',
+      videoUrl: 'https://player.vimeo.com/video/1173690242',
       gifUrl: 'productions/public/gifs/Intuit Teaser.gif'
     },
     {
@@ -56,7 +58,7 @@
       partner: 'ATTN',
       description: 'Justin partners with ATTN and travels across MGM resorts in Las Vegas, discussing how each experience heightens and reduces specific neurotransmitters.',
       category: 'Branded Content',
-      videoUrl: 'https://player.vimeo.com/video/787494350',
+      videoUrl: 'https://player.vimeo.com/video/1173690454',
       gifUrl: 'productions/public/gifs/mgm-attn.gif'
     },
     {
@@ -65,7 +67,7 @@
       partner: 'Fascinate Media',
       description: 'Justin breaks down how he used a virtual production workflow to create A Second Home, an immersive educational series hosted by an astrophysicist imagining life on exoplanets.',
       category: 'Series',
-      videoUrl: 'https://player.vimeo.com/video/787498544',
+      videoUrl: 'https://player.vimeo.com/video/888902646',
       gifUrl: 'productions/public/gifs/ASecondHome2.gif'
     },
     {
@@ -74,6 +76,7 @@
       partner: 'Fascinate Media',
       description: 'Day On Mars is a 3D-Animated short-form series produced in Unreal Engine that showcases how future residents might spend their day on Mars.',
       category: 'Series',
+      videoUrl: 'https://player.vimeo.com/video/1173691009',
       gifUrl: 'productions/public/gifs/DayOnMars4k_7_6_24_1(2).gif'
     },
     {
@@ -82,7 +85,7 @@
       partner: 'Al Roker Entertainment',
       description: 'A proof of concept for a series produced by Al Roker Entertainment about the Metaverse and its implications, hosted and co-produced by Justin "Mr. Fascinate" Shaifer.',
       category: 'Series',
-      videoUrl: 'https://player.vimeo.com/video/787497906',
+      videoUrl: 'https://player.vimeo.com/video/1012637967?h=41b4df4867',
       gifUrl: 'productions/public/gifs/metaverse.gif'
     },
     {
@@ -91,7 +94,7 @@
       partner: 'WEDU PBS',
       description: 'Justin works with WEDU PBS in Tampa, FL to discuss innovations for local climate impact reduction. This was filmed immediately before Hurricane Ian made landfall nearby.',
       category: 'Broadcast',
-      videoUrl: 'https://player.vimeo.com/video/787495541',
+      externalUrl: 'https://www.pbs.org/video/climate-change-fctdyl/',
       gifUrl: 'productions/public/gifs/WEDU.gif'
     },
     {
@@ -100,7 +103,7 @@
       partner: 'PureCycle / Intuitive Content',
       description: 'Justin works with MythBusters star Kari Byron and Jenny Buccos to host a show about the past, present, and future of plastics.',
       category: 'Series',
-      videoUrl: 'https://player.vimeo.com/video/787496645',
+      externalUrl: 'https://www.purecycle.com/blog/purecycle-teams-up-with-mythbusters-alum-explr-media-to-educate-kids-on-plastic-waste',
       gifUrl: 'productions/public/gifs/purecycle.gif'
     },
     {
@@ -109,7 +112,7 @@
       partner: 'Al Roker Entertainment',
       description: 'Justin works with Al Roker Entertainment to host an episode of a dynamic show where he explores the possibility of human-led expeditions to the moon and Mars.',
       category: 'Series',
-      videoUrl: 'https://player.vimeo.com/video/787497321',
+      externalUrl: 'https://www.imdb.com/title/tt13374348/',
       gifUrl: 'productions/public/gifs/Forging the Future.gif'
     },
     {
@@ -127,6 +130,7 @@
       partner: 'ABC News',
       description: 'Justin weighs in on the importance of STEM with ABC News on Prime Time TV in their 6-part series Soul of a Nation. Justin\'s feature in episode 2 is now available on Hulu.',
       category: 'Broadcast',
+      externalUrl: 'https://www.apbspeakers.com/blog/posts/2021/march/apb-exclusive-justin-shaifer-to-be-featured-in-new-abc-series-soul-of-a-nation/',
       gifUrl: 'productions/public/gifs/abc.gif'
     },
     {
@@ -231,10 +235,7 @@
         mediaHTML = '<div class="card-placeholder"><span>' + escapeHTML(p.title) + '</span></div>';
       }
 
-      var playHTML = '';
-      if (p.videoUrl) {
-        playHTML = '<div class="card-play"><div class="card-play-btn"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg></div></div>';
-      }
+      var playHTML = '<div class="card-play"><div class="card-play-btn"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg></div></div>';
 
       card.innerHTML =
         '<div class="card-media">' +
