@@ -96,6 +96,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 12px 24px;
+  background: #181824;
 }
 
 .navbar-logo img {
@@ -156,6 +157,7 @@ img {
   padding: 20px;
   flex-direction: column;
   gap: 12px;
+  background: #181824;
 }
 
 .navbar-mobile.is-open {
