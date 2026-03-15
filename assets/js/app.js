@@ -85,7 +85,7 @@
       partner: 'Al Roker Entertainment',
       description: 'A proof of concept for a series produced by Al Roker Entertainment about the Metaverse and its implications, hosted and co-produced by Justin "Mr. Fascinate" Shaifer.',
       category: 'Series',
-      videoUrl: 'https://player.vimeo.com/video/1012637967?h=41b4df4867',
+      videoUrl: 'https://player.vimeo.com/video/1012637967',
       gifUrl: 'productions/public/gifs/metaverse.gif'
     },
     {
