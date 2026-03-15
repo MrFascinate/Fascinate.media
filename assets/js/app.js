@@ -22,7 +22,7 @@
       partner: 'Chevrolet',
       description: 'Justin hosts a car commercial for Chevy\'s EV, describing "What\'s Cool About Electric" and how sustainable energy sources can empower communities of color.',
       category: 'Branded Content',
-      videoUrl: 'https://player.vimeo.com/video/787496100',
+      videoUrl: 'https://player.vimeo.com/video/1173691521',
       gifUrl: 'productions/public/gifs/CHEVY DTU.gif'
     },
     {
